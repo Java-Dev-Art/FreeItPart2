@@ -1,0 +1,62 @@
+body{
+    background-color: aquamarine;
+}
+.class-form{
+    width: 500px;
+    padding: 10px 10px 10px 10px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    box-shadow: 0px 9px 13px 5px;
+    border-radius: 5px;
+}
+.username{
+    width: 100%;
+    border-radius: 5px;
+    height: 20px;
+    background: darkturquoise;
+}
+.lastname{
+    width: 100%;
+    border-radius: 5px;
+    height: 20px;
+    background: darkturquoise;
+}
+.email{
+    width: 100%;
+    border-radius: 5px;
+    height: 20px;
+    background: darkturquoise;
+}
+.pass{
+    width: 100%;
+    border-radius: 5px;
+    height: 20px;
+    background: darkturquoise;
+}
+.submit{
+    height: 30px;
+    background: rgb(59, 118, 135);
+    box-shadow: 0px 9px 9px 5px;
+
+}
+footer{
+    padding: 6px 40px 6px 40px;
+    background: #d6d6d6;
+    font-family: "Lucida Sans Unicode";
+    color: #444444;
+    font-size: 11px;
+    text-decoration: darkblue;
+
+}
+footer a{
+    text-decoration: none;
+    color: #262626;
+}
+footer a:hover{
+    color: aqua;
+}
+.separator{
+    color: #FFFFFF;
+    font-size: 11px;
+
+}

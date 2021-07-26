@@ -1,8 +1,8 @@
 package by.markouski.FreeItPart2;
 
-import javax.servlet.ServletException;
-import javax.servlet.ServletInputStream;
-import javax.servlet.ServletOutputStream;
+import com.sun.deploy.nativesandbox.comm.Request;
+
+import javax.servlet.*;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -14,6 +14,10 @@ public class SecondServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         ServletOutputStream outputStream = resp.getOutputStream();
+//        ServletContext context = getServletContext();
+//        RequestDispatcher dispatcher = context.getRequestDispatcher("/first-servlet");
+//        dispatcher.forward(req,resp);
+
         outputStream.print("<style> div{color:blue;}</style>");
 
         String name = req.getParameter("username");
@@ -42,6 +46,7 @@ public class SecondServlet extends HttpServlet {
         }
         outputStream.print("</ol>");
         System.out.println(pass);
+
     }
 
     @Override

@@ -1,8 +1,6 @@
 package by.markouski.FreeItPart2;
 
-import javax.servlet.ServletException;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
+import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 import java.io.IOException;
@@ -37,6 +35,7 @@ public class FirstServlet extends HttpServlet {
          }
          writer.write("Page was visited " + counter + "times.");
          writer.close();
+
     }
 
     @Override

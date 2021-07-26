@@ -3,21 +3,26 @@
 <html>
 <head>
     <title>JSP - Hello World</title>
+<%--    <link rel="stylesheet" href="style.css" type="text/html">--%>
+    <style>
+        <%@include file="style.css"%>
+    </style>
 </head>
 <body>
 <h1><%= "Hello World!" %>
 </h1>
+<div class="class-form">
 <form action="second" method="GET">
-    Name: <input name="username" />
+    Name: <input class="username" name="username" />
     <br><br>
-    Last Name : <input name="lastname"/>
+    Last Name : <input class="lastname" name="lastname"/>
     <br><br>
-    Email:<input name="email"/>
+    Email:<input class="email" name="email"/>
     <br><br>
-    Password: <input type="password" name="pass">
+    Password: <input class="pass" type="password" name="pass">
     <br><br>
-    Gender: <input type="radio" name="gender" value="female" checked />Female
-    <input type="radio" name="gender" value="male" />Male
+    Gender: <input class="female" type="radio" name="gender" value="female" checked />Female
+    <input class="male" type="radio" name="gender" value="male" />Male
     <br><br>
     Country: <select name="country">
     <option>Germany</option>
@@ -47,8 +52,9 @@
     <input type="checkbox" name="courses" value="WEB dev" checked />WEB dev
     <input type="checkbox" name="courses" value="JavaScript" checked />JavaScript
     <br><br>
-    <input type="submit" value="Submit" />
+    <input class="submit"  type="submit" value="Submit" />
 </form>
+</div>
 <br/>
 <a href="hello-servlet">Hello Servlet</a>
 <br/>
@@ -57,5 +63,9 @@
 <p><a href="initParam">Support</a></p>
 <br/>
 <h5><a href="mailto:veles.mk.12@gmail.com">Send Message To Us</a> </h5>
+<footer>
+    &copy; 2021 Krakow  &nbsp;<span class="separotor">|</span> Desing by <a href="https://www.instagram.com/arturmarkowski232/">Artur M</a>
+</footer>
+
 </body>
 </html>
