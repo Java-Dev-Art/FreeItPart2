@@ -8,9 +8,25 @@
         <servlet-name>servlet</servlet-name>
         <servlet-class>by.markouski.FreeItPart2.ServletF</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>forward</servlet-name>
+        <servlet-class>by.markouski.FreeItPart2.Forward</servlet-class>
+    </servlet>
+    <filter>
+        <filter-name>filterServ</filter-name>
+        <filter-class>by.markouski.FreeItPart2.FilterServlet</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>filterServ</filter-name>
+        <url-pattern>/serv</url-pattern>
+    </filter-mapping>
     <servlet-mapping>
         <servlet-name>servlet</servlet-name>
-        <url-pattern>serv</url-pattern>
+        <url-pattern>/serv</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>forward</servlet-name>
+        <url-pattern>/forward</url-pattern>
     </servlet-mapping>
 
     <welcome-file-list>

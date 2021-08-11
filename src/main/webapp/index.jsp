@@ -8,9 +8,9 @@
 
 <form action="serv" method="GET">
     <p>Name <input type="text" name="username"/></p>
-    <br><br>
-    <p>Password<input type="password" name="pass"/></p>
-    <br><br>
+    <br>
+    <p>Password <input type="password" name="pass"/></p>
+    <br>
     <p><input type="submit"/></p>
 </form>
 
