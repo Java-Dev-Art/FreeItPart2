@@ -5,9 +5,14 @@
     <title>JSP - Hello World</title>
 </head>
 <body>
-<h1><%= "Hello World!" %>
-</h1>
-<br/>
-<a href="hello-servlet">Hello Servlet</a>
+
+<form action="serv" method="GET">
+    <p>Name <input type="text" name="username"/></p>
+    <br><br>
+    <p>Password<input type="password" name="pass"/></p>
+    <br><br>
+    <p><input type="submit"/></p>
+</form>
+
 </body>
 </html>
